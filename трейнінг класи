@@ -1,0 +1,21 @@
+class Title():
+    def __int__(self,text,x,y,appearance):
+        self.text=text
+        self.x=x
+        self.y=y
+        self.appearance=appearance
+
+    def print_info(self):
+        print("КНОПКА: ",self.text)
+        print(f"Розташування: ({self.x},{self.y})")
+    def show(self):
+        print(f"{self.text}-відображається")
+    def hide(self):
+        print(f"{self.text}-приховано")
+
+button1=Title("Дізнатися переможця прамо зараз",150,50,True)
+button2=Title("Переможець може бути тільки один",150,-100,True)
+button1.print_info()
+button2.print_info()
+
+button2.hide()
